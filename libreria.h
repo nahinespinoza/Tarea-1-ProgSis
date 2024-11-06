@@ -32,7 +32,7 @@ float calcular_perimetro_poligono_regular(int nLados, float longitud);
 float calcular_superficie_cubo(float lado);
 float calcular_volumen_cubo(float lado);
 
-float calcular_superficie_cuboide(float largo, float ancho, float alto );
+float calcular_superficie_cuboide(float largo, float ancho, float alto);
 float calcular_volumen_cuboide(float largo, float ancho, float alto);
 
 float calcular_superficie_cilindro_recto(float radio, float altura);
@@ -52,5 +52,11 @@ int mostrar_elegir_AP();
 int mostrar_elegir_SV();
 void mostrar_resultado(const char *figura, float resultado);
 int continuar();
+
+// Registro y control de Usuarios
+
+int validarUsuarioClave(const char *nombreUsuario, const char *contrasena);
+void registrarEnBitacora(const char *nombreUsuario, const char *descripcionAccion);
+void registrarOperacion(const char *nombreUsuario, const char *nombreFigura);
 
 #endif
